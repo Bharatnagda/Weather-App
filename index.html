@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feel Weather of Your City</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    
+    <div class="container" data-tilt data-tilt-scale="1.1">
+      <div class="header">
+        <div class="search-bar">
+          <input id="city" type="search" placeholder="Enter Your City" />
+  
+          <img id="submit" src="./assets/search-icon.png" class="search-icon" />
+        </div>
+        <h1 id="cityname">Udaipur</h1>
+        <div class="details">
+          <div class="row">
+            <img src="./assets/favicon-32x32.png" class="city" />
+            <div class="temp" id="temp"></div>
+            <span>Temperature</span>
+          </div>
+          <div class="row">
+              <img src="./assets/favicon-32x32.png" class="city" />
+              <div class="temp" id="humidity"></div>
+              <span>Humidity</span>
+            </div>
+            <div class="row">
+              <img src="./assets/windspeed-32x32.png" class="city" />
+              <div class="temp" id="wind_speed"></div>
+              <span>Wind Speed</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="./app.js"></script>
+    <script src="./vanilla-tilt.js"></script>
+  </body>
+</html>
